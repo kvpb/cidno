@@ -1,0 +1,49 @@
+[package]
+name = "idnoc" #"g7idc"
+version = "4.0.0" #"4.00"
+authors = ["Karl Vincent Pierre Bertin <karl.v.p.bertin@gmail.com>"]
+edition = "2015"
+#rust-version =
+description = "An ID number calculator."
+#documentation = ""
+readme = "README.md"
+repository = "https://github.com/kvpb/idnoc" #"https://github.com/kvpb/g7idc"
+#license = "BSD-3-Clause"
+license-file = "LICENSE"
+keywords = ["generation", "i", "1", "g1", "iii", "3", "g3", "vii", "7", "g7", "trainer", "id", "g7id", "tid", "idno", "g7tid", "secret", "sid", "g7sid", "number", "shiny", "value", "tsv", "residual", "trv", "forward", "reverse", "backward", "random", "calculator"]
+
+[dependencies]
+libc = "^0.2"
+cxx = "^1.0"
+rand = "^0.8"
+libm = "^0.2"
+num-traits = "^0.2"
+
+[build-dependencies]
+cxx-build = "1.0"
+
+[profile.dev]
+opt-level = 0
+debug = true
+overflow-checks = false
+incremental = true
+
+[profile.release]
+opt-level = 3
+debug = false
+overflow-checks = true
+lto = true
+panic = "abort"
+
+#	Cargo.toml
+#	IDNo Calculator
+#
+#	Karl V. P. B. `kvpb` AKA Karl Thomas George West `ktgw`
+#	+1 (DDD) DDD-DDDD
+#	+33 A BB BB BB BB
+#	local-part@domain
+#	local-part@domain
+#	https://www.linkedin.com/in/
+#	https://twitter.com/ktgwkvpb
+#	https://github.com/kvpb
+#	https://vm.tiktok.com/ZSwAmcFh/
