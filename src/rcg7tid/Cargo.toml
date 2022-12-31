@@ -1,0 +1,39 @@
+[package]
+name = "rcg7tid"
+version = "1.2.0"
+authors = ["Karl Vincent Pierre Bertin <karl.v.p.bertin@gmail.com>", "Karl Thomas George West <karl.t.g.west@gmail.com>"]
+edition = "2021"
+#rust-version =
+description = "A random generation VII trainer ID calculator."
+#documentation = ""
+readme = "README.md"
+repository = "https://github.com/kvpb/randomG7TIDcalculator"
+#license = "BSD-3-Clause"
+license-file = "LICENSE"
+keywords = ["random", "generation", "i", "1", "g1", "iii", "3", "g3", "vii", "7", "g7", "trainer", "id", "g7id", "tid", "idno", "g7tid", "secret", "sid", "g7sid", "number", "shiny", "value", "tsv", "residual", "trv", "calculator"]
+
+#[dependencies]
+#
+
+[lib]
+name = "crg7tid"
+path = "src/lib.rs"
+#test = true
+#doctest = false
+#bench = false
+#doc = false
+#plugin = false
+#proc-macro = false
+#harness = false
+edition = "2015"
+crate-type = ["lib"]
+#required-features = []
+
+#	Cargo.toml
+#	RCG7TID (Random G7TID Calculator)
+#
+#	Karl V. P. B. `kvpb`	AKA Karl Thomas George West `ktgw`
+#	+33 A BB BB BB BB		+1 (DDD) DDD-DDDD
+#	local-part@domain
+#	https://twitter.com/ktgwkvpb
+#	https://github.com/kvpb
