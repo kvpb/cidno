@@ -1,7 +1,7 @@
 [package]
 name = "cidno" #"cg7id"
-version = "4.2.0" #"4.00"
-authors = ["Karl Vincent Pierre Bertin <karl.v.p.bertin@gmail.com>", "Karl Thomas George West <karl.t.g.west@gmail.com>"]
+version = "4.21.0" #"4.00"
+authors = ["Karl Vincent Pierre Bertin <local-part@domain>", "Karl Thomas George West <local-part@domain>"]
 edition = "2021"
 #rust-version =
 description = "An ID number calculator."
@@ -13,30 +13,38 @@ license-file = "LICENSE"
 keywords = ["non-random", "random", "generation", "i", "1", "g1", "iii", "3", "g3", "vii", "7", "g7", "trainer", "id", "g7id", "tid", "idno", "g7tid", "secret", "sid", "g7sid", "number", "shiny", "value", "tsv", "residual", "trv", "forward", "reverse", "backward", "calculator"]
 
 [dependencies]
-#libc = "^0.2"
-#cxx = "^1.0"
 rand = "^0.8"
 libm = "^0.2"
 num-traits = "^0.2"
-#cg7tid = { path = "./src/cg7tid/" }
-#bcg7tid = { path = "./src/bcg7tid/" }
-#rcg7tid = { path = "./src/rcg7tid/" }
 
 #[build-dependencies]
-#cxx-build = "1.0"
+#
 
 [profile.dev]
 opt-level = 0
 debug = true
+#split-debuginfo = '...'
+#strip = "none"
+#debug-assertions = true
 overflow-checks = false
+#lto = false
+#panic = 'unwind'
 incremental = true
+#codegen-units = 256
+#rpath = false
 
 [profile.release]
 opt-level = 3
 debug = false
-overflow-checks = true
+#split-debuginfo = '...'
+#strip = "none"
+#debug-assertions = false
+overflow-checks = false #overflow-checks = true
 lto = true
 panic = "abort"
+#incremental = false
+#codegen-units = 16
+#rpath = false
 
 #	Cargo.toml
 #	CIDNo (IDNo Calculator)
@@ -44,5 +52,5 @@ panic = "abort"
 #	Karl V. P. B. `kvpb`	AKA Karl Thomas George West `ktgw`
 #	+33 A BB BB BB BB		+1 (DDD) DDD-DDDD
 #	local-part@domain
-#	https://twitter.com/ktgwkvpb
+#	https://x.com/ktgwkvpb
 #	https://github.com/kvpb
