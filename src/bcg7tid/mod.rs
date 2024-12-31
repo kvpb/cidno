@@ -13,13 +13,11 @@
 pub mod l_n;
 pub mod F_IDNo;
 
-//pub use super/*crate*/::g7tidrc::l_n;
-
 /*//	mod.rs
 ////	CIDNo (IDNo Calculator)
 ////
 ////	Karl V. P. B. `kvpb`	AKA Karl Thomas George West `ktgw`
 ////	+33 A BB BB BB BB		+1 (DDD) DDD-DDDD
 ////	local-part@domain
-////	https://twitter.com/ktgwkvpb
+////	https://x.com/ktgwkvpb
 *///	https://github.com/kvpb
